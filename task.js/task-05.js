@@ -1,6 +1,12 @@
-const input = document.querySelector("#name-input");
-let output = document.querySelector("#name-output");
+const inputItem = document.querySelector('#name-input');
+const outputItem = document.querySelector('#name-output');
 
-input.addEventListener("input", (event) => {
-	output.textContent = event.currentTarget.value;
-});
+const inputHandle = () => {
+	if (inputItem.value.length > 0) {
+		outputItem.textContent = inputItem.value;
+	} else {
+		outputItem.textContent = 'Anonymous';
+	}
+}
+inputItem.addEventListener('input', inputHandle);
+

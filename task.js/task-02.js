@@ -6,7 +6,6 @@ const ingredients = [
 	"Herbs",
 	"Condiments",
 ];
-console.log("------------");
 
 const ulList = document.querySelector("#ingredients");
 console.log(ulList);
